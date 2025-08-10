@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meu Curriculo online</title>
+    <!-- Criando uma pagina basica de curriculo com HTML e CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="apresentacao">
+      <img src="media/Thigas.JPG" alt="Foto do Curriculo" />
+      <p>
+        Olá eu sou Thiago Emanuel Correia Heckler, moro em Guarujá do Sul. Estou
+        cursando ciencia da computação na Universidade do Oeste de Santa
+        Catarina em São Miguel do Oeste, tenho interrese na area de programação,
+        sou um intusiasta no desenvolvimento de jogos (Quero criar jogos apenas
+        por hobbie).
+      </p>
+      <canvas id="circulo" width="300" height="150"></canvas>
+      <script>
+        const canvas = document.getElementById("circulo");
+        const ctx = canvas.getContext("2d");
+
+        ctx.beginPath();
+        ctx.arc(150, 75, 50, 0, 2 * Math.PI); // (x, y, raio, ângulo inicial, ângulo final)
+        ctx.fillStyle = "#FF5722";
+        ctx.fill();
+      </script>
+    </div>
+    <div class="container">
+      <div class="habilidades">
+        <ul>
+          <h1>Minhas habilidades são:</h1>
+          <li>Java</li>
+          <li>React</li>
+          <li>PostgreSQL</li>
+          <li>Docker</li>
+          <li>Node.js</li>
+        </ul>
+      </div>
+      <div class="contato">
+        <h1>Contato</h1>
+        <a
+          href="https://www.linkedin.com/in/thiago-emanuel-correia-heckler-77ba27268/"
+          rel="nofollow"
+          >LinkedIn</a
+        >
+        <a href="https://www.instagram.com/thiago.emanuuel/" rel="nofollow"
+          >Instagram</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
